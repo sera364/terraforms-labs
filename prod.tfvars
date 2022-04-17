@@ -1,0 +1,7 @@
+workspace_name =  "prod"
+private1_cidr = "10.0.2.0/24"
+region = "us-east-2"
+private2_cidr = "10.0.4.0/24"
+public1_cidr  = "10.0.1.0/24"
+public2_cidr = "10.0.3.0/24"
+vpc_cidr = "10.0.0.0/16"
