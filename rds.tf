@@ -3,7 +3,7 @@ resource "aws_db_instance" "rds-sara" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
-  name                 = "mydb"
+  db_name                 = "mydb"
   username             = var.username
   password             = var.password
   parameter_group_name = "default.mysql5.7"
