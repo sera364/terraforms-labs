@@ -1,9 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "sara-bucket-ter"
+    bucket = "terraform-jenkins-96"
     key    = "sarastate.tf"
-    region = "us-east-1"
-    dynamodb_table = "sara-dynamodb"
+    region = "us-east-2"
     profile = "default"
   }
 }
