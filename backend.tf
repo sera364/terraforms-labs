@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "jenkins-terraform-97"
+    bucket = "sara-jenkins-lab"
     key    = "sarastate.tf"
-    region = "eu-central-1"
+    region = "us-west-2"
     profile = "default"
   }
 }
