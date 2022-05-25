@@ -1,5 +1,5 @@
 resource "aws_instance" "sara-public-instance"{
-  ami                         = "ami-0ca285d4c2cda3300"
+  ami                         = "ami-0ee8244746ec5d6d4"
   instance_type               = "t2.micro"
   key_name                    = aws_key_pair.public_key_pair.id
   vpc_security_group_ids      = [aws_security_group.security-group-public.id]
@@ -19,7 +19,7 @@ resource "aws_instance" "sara-public-instance"{
 }
 
 resource "aws_instance" "sara-private-instance"{
-  ami                         = "ami-0ca285d4c2cda3300"
+  ami                         = "ami-0ee8244746ec5d6d4"
   instance_type               = "t2.micro"
   key_name                    = aws_key_pair.public_key_pair.id
   vpc_security_group_ids      = [aws_security_group.security-group-private.id]
