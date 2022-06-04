@@ -17,7 +17,7 @@ pipeline {
 //                     sh ' cat sarsora.pem'
 //                     sh ' echo $HOME'
                     sh '''
-                     cat <<EOT >> ~/.ssh/config
+                     cat <<EOF >> ~/.ssh/config
 Host JumpHost
     Hostname 54.191.113.225
     User ubuntu
