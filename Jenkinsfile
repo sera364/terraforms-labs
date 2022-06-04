@@ -15,7 +15,7 @@ pipeline {
                     sh 'terraform output private_key > sarsora.pem'
                     sh 'chmod 400 sarsora.pem'
                     sh ' cat sarsora.pem'
-                    sh ' echo $USER'
+                    sh ' echo $HOME'
 
 
                 }
