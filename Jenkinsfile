@@ -13,6 +13,7 @@ pipeline {
 //                     sh 'terraform output puplicec2'
 //                     sh 'terraform output privateec2'
                     sh 'terraform output private_key > sarsora.pem'
+                    sh 'chmod 400 sarsora.pem'
 
 
                 }
