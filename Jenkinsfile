@@ -32,7 +32,6 @@ Host PrivateHost
     AddKeysToAgent yes
     ProxyJump JumpHost
     StrictHostKeyChecking=no
-
 EOF
 '''
                     
