@@ -19,14 +19,14 @@ pipeline {
                     sh '''
                      cat <<EOF >> ~/.ssh/config
 Host JumpHost
-    Hostname 54.191.113.225
+    Hostname `terraform output puplicec2`
     User ubuntu
     IdentityFile /var/jenkins_home/workspace/terraform/sarsora.pem
     AddKeysToAgent yes
     StrictHostKeyChecking=no
 
 Host PrivateHost
-    Hostname 10.0.2.221
+    Hostname `terraform output privateec2`
     IdentityFile /var/jenkins_home/workspace/terraform/sarsora.pem
     User ubuntu
     AddKeysToAgent yes
