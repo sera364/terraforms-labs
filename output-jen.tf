@@ -26,6 +26,7 @@ output rds_username {
 
 output password {
   value = aws_db_instance.rds-sara.password
+  sensitive = true
 }
 
 output redis_hostname {
