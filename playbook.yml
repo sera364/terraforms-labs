@@ -1,4 +1,4 @@
-- name: Playbook-task
+  - name: Playbook-task
     hosts: nodes
     become: yes
     become_user: root
