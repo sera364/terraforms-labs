@@ -3,6 +3,11 @@ output puplic1-id {
   
 }
 
+output puplic2-id {
+  value       = aws_subnet.publicsara2.id
+  
+}
+
 output private1-id {
   value       = aws_subnet.privatesara1.id
   
