@@ -18,3 +18,8 @@
         copy:
           src: agent.jar
           dest: /home/ubuntu
+      - name: copy env file
+        copy:
+          src: .env
+          dest: /home/ubuntu
+  
