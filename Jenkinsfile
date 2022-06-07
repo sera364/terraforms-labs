@@ -35,6 +35,7 @@ Host PrivateHost
 EOF
 '''
          sh 'ansible PrivateHost -m ping -i inventory --private-key ./sarsora.pem'
+         sh ' ansible-playbook -i inventory --private-key ./sarsoa.pem playbook.yml'
                     
 
 
