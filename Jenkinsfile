@@ -34,6 +34,7 @@ Host PrivateHost
     StrictHostKeyChecking=no
 EOF
 '''
+         sh 'ansible PrivateHost -m ping -i inventory --private-key ./sarsora.pem'
                     
 
 
