@@ -16,7 +16,7 @@ resource "aws_security_group" "security-group-private" {
     from_port        = 3000
     to_port          = 3000
     protocol         = "tcp"
-    cidr_blocks      = [module.network.vpc-cidr]
+    cidr_blocks      = ["0.0.0.0/0"]
     
   }
 
