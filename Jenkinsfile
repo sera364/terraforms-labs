@@ -34,6 +34,16 @@ Host PrivateHost
     StrictHostKeyChecking=no
 EOF
 '''
+                    sh  '''
+                      cat <<EOF >> .env
+RDS_HOSTNAME=`terraform output -raw rds_hostname`
+RDS_RDS_PORT=`terraform output -raw rds_port`
+RDS_USERNAME=`terraform output -raw rds_username`
+RDS_PASSWORD=`terraform output -raw password`
+REDIS_HOSTNAME=`terraform output -raw redis_hostname`
+REDIS_REDIS_PORT=`terraform output -raw redis_port`
+EOF
+'''
          sh 'ansible PrivateHost -m ping -i inventory --private-key ./sarsora.pem'
          sh ' ansible-playbook -i inventory --private-key ./sarsoa.pem playbook.yml'
                     
