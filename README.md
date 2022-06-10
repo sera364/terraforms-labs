@@ -42,7 +42,7 @@ infra structure is built on aws with terraform tool and it consists of:
 * ## Node-app Deployment pipeline
 
 
-    * jenkins deploy the app from this [forked repo](https://github.com/abdulmageed02/jenkins_nodejs_example/tree/rds_redis) 
+    * jenkins deploy the app from this [forked repo](https://github.com/sera364/jenkins_nodejs_example) 
 
     * the app need Enviroment variables and their values are created by `terraform` then copied to the private instance using `ansible`
 
